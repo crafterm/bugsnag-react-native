@@ -27,5 +27,6 @@ Pod::Spec.new do |s|
   s.subspec 'Core' do |core|
     core.source_files = 'cocoa/BugsnagReactNative.{h,m}'
     core.public_header_files = ['cocoa/BugsnagReactNative.h']
+    core.dependency 'Bugsnag'
   end
 end
